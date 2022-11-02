@@ -1,12 +1,12 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BLL.Models
+﻿namespace BLL.Models
 {
-    public class EmailNotification
+    public class EmailNotification : Notification
     {
+        public EmailNotification(Notification notification)
+        {
+            Name = notification.Name;
+            Message = notification.Message;
+            Type = Shared.NotificationType.email;
+        }
     }
 }

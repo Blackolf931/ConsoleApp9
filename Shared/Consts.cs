@@ -3,7 +3,9 @@
     public static class Consts
     {
         public const string directoryPath = @"\Notifications";
-        public const string templatePath = new DirectoryInfo($"{Directory.GetCurrentDirectory()}\\");
+        public const string templatePath = @"\Template\Template.json";
+        public const string emailNotification = @"SendNotifications\Email";
+        public const string pdfNotification = @"SendNotifications\Pdf";
+        public const string smsNotification = @"SendNotifications\Sms";
     }
 }
-"C:\Users\User\source\repos\ConsoleApp9\ConsoleApp9\bin\Debug\net6.0\Templates\Template.txt"
