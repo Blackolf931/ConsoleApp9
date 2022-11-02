@@ -4,7 +4,7 @@ namespace BLL.Services
 {
     public class GenericService<TModel> : IGenericService<TModel>
     {
-        public Task SendNotifications(TModel entity, CancellationToken ct)
+        public virtual Task SendNotification(TModel model)
         {
             throw new NotImplementedException();
         }

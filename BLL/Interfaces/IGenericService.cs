@@ -1,7 +1,8 @@
 ﻿namespace BLL.Interfaces
 {
-    public interface IGenericService<TEntity>
+    public interface IGenericService<in TModel>
     {
-        Task SendNotifications(TEntity entity, CancellationToken ct);
+         Task SendNotification(TModel model);
     }
 }
+ 

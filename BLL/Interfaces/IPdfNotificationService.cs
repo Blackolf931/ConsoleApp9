@@ -2,8 +2,7 @@
 
 namespace BLL.Interfaces
 {
-    public interface IPdfNotificationService : IGenericService<PDFNotification>
+    public interface IPdfNotificationService : IGenericService<PdfNotification>
     {
-        Task GenerateNotification(SMSNotifivcation smsNotification);
     }
 }
